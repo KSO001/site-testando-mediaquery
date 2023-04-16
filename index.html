@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- CSS do Google para icone do menu -->
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-query.css"></link>
+</head>
+<body onresize="mudouTamanho()"><!-- javascript -->
+    
+    <header>
+        
+        <h1>Meu Site</h1>
+        
+       
+      <i id="burger" class="material-symbols-outlined" onclick="clickMenu()">menu</i>
+      
+      <!-- icone com id, uma class e javascript-->
+        
+        <menu id="itens">
+            
+            <ul>
+                
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+                
+            </ul>
+            
+        </menu>
+        
+    </header>
+    
+    <main>
+        
+        <article>
+            
+            <h2>Testando Media Query</h2>
+            
+            <p>Esse site está sendo criado para fazer testes
+            com media query, fazer responsividade com o menu
+            também.</p>
+            
+            
+        </article>
+        
+    </main>
+    
+    <script>
+        
+        function mudouTamanho() {
+            if (window.innerwidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+        
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+        
+    </script>
+    
+    
+    <!-- javascript para clicar no ícone e aparecer o menu  -->
+    
+    <!-- Javascript para que quando for maior ou igual a tela de
+    768px, o menu aparecer.
+     -->
+    
+</body>
+</html>
