@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+/*
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes Telas (tv): Acima de 1200px
+   
+
+*/
+
+@media screen and (min-width: 768px) {
+    
+    .material-symbols-outlined {
+        
+        display: none;
+        
+    }
+    
+    
+    menu {
+    
+        display: block;
+        
+    }
+    
+    menu > ul > li {
+        display: inline-block;
+    }
+  
+    menu a {
+    
+    border-top: none;
+    padding: 20px;
+    
+        
+    }
+  
+  
+  main {
+      width: 60vw;
+      padding: 10px;
+  }
+    
+}
